@@ -1,0 +1,81 @@
+/* 
+    Student Carlos Pinheiro
+    First CSS file. 
+  
+    selector {
+        property : value;
+    }
+*/
+
+/* TAGS */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+a{
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: italic;
+}
+
+h2
+{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+p{
+    color: blue;
+    font-family:  Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 1px #111111;  /*horizontal Vertical blur color*/
+}
+
+
+header{
+    background-color: darkseagreen;
+    height: 100px;
+    width: 100%;
+}
+
+footer{
+    clear: both;
+    background-color: darkseagreen;
+    height: 20px;
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* ID's */
+#div-section{
+    background-image: url("basset-hound-1.jpg");
+    background-size: 90%;
+    min-height: 300px;
+    padding: 10px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Class */
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.softback{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 80px 0px 80px;
+}
