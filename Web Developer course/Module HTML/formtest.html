@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+    <header>
+        <title>Firs form</title>
+    </header>
+
+    <body>
+        
+        <h2>Register</h2>
+        <form action="" method="post">
+            <div>
+                <label for="firstName">First  name</label>
+                <input id="firstName" type="text"
+                 placeholder="First name" required>
+
+                <label for="lastName">Last name</label>
+                <input id="lastName" type="text" placeholder="Last name" required>
+            </div>
+            
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="Gender" id="male">
+
+                <label for="female">Female</label>
+                <input type="radio" name="selectGender" id="female">
+
+                <label for="other">Other</label>
+                <input type="radio" name="selectGender" id="other">
+            </div>
+
+            <div>   
+                <label for="email">Email</label>
+                <input type="email" name="emailLine" id="email" placeholder="Your email">
+
+                <label for="password">Password</label>
+                <input type="password" name="passwordLine" id="password" placeholder="Password" pattern=".{5,10}" required title="Password must be between 5 a 10 characters">
+            </div>
+            
+            <div>
+                <label for="birthday">Birthday</label>
+                <select name="month" id="birthday">
+                    <option value="">month</option>
+                    <option value="1">January</option>
+                </select>
+                <select name="day" id="day">
+                    <option value="">day</option>
+                    <option value="1">1</option>
+                </select>
+                <select name="year" id="year">
+                    <option value="">year</option>
+                    <option value="1">1994</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="checkbox">I agree with the terms and conditions</label>
+                <input type="checkbox" name="checkbox" id="checkbox">
+            </div>
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </body>
+</html>
