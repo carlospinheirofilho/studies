@@ -1,0 +1,41 @@
+header{
+    margin-top: 2em;
+    text-align: center;
+}
+
+#start-div{
+    margin-top:  10em;
+    text-align: center;
+}
+
+.option {
+    height: 10em;
+    width: 10em;
+    margin: 2.5em;
+    border: 2px solid;
+    border-color: #373737;
+}
+
+#menu-div{
+    height:  2.5em;
+    background-color: #373737;
+}
+
+div#menu-div div p{
+    color: bisque;
+    text-align: center;
+    margin-top: 0.5em;
+}
+div#menu-div div p:hover{
+    cursor: pointer;
+    background-color: #5c2909;
+}
+
+div#menu-div div :nth-child(1){
+    margin-left: 3em;
+}
+
+div#test-picker p{
+    text-align: center;
+    margin-top: 2rem;
+}
