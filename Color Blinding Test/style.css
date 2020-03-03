@@ -3,10 +3,34 @@ header{
     text-align: center;
 }
 
+body{
+    background-image: url("background.jpg");
+    background-color: #cccccc;
+    height: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+select{
+    margin-left: 5em;
+}
+
+.board{
+    border: 3px solid;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
 #start-div{
     margin-top:  10em;
     text-align: center;
 }
+
+h3{
+    padding-left: 12em;
+}
+
 
 .option {
     height: 10em;
