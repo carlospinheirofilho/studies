@@ -28,11 +28,6 @@ select{
     text-align: center;
 }
 
-h3{
-    padding-left: 12em;
-}
-
-
 .option {
     height: 10em;
     width: 10em;
@@ -46,30 +41,49 @@ h3{
     background-color: #242323;
 }
 
+.menu-btn{
+    cursor: pointer;
+}
+
 div#menu-div div p{
     color: bisque;
     text-align: center;
     margin-top: 0.5em;
-}
-div#menu-div div p:hover{
-    cursor: pointer;
-    background-color: #f5f5f5;
-    color: #242323;
 }
 
 div#menu-div div :nth-child(1){
     margin-left: 3em;
 }
 
-div#test-pick p{
+div#tab-test-pick p{
     text-align: center;
     margin-top: 2rem;
 }
 
-#test-pick{
+#tab-test-pick{
     display: none;
 }
 
-#whats-colorblindness p{
+#tab-commom-types{
+    display: none;
+}
+
+#tab-whats-colorblindness p{
     margin-left: 10px;
+}
+#tab-commom-types p{
+    margin-left: 10px;
+}
+
+#counter-border{
+    border: 3px solid;
+    border-color: #242323;
+    border-radius: 60%;
+    width: 60px;
+    margin-left: 45%;
+}
+
+.div-button{
+    text-align: center;
+    margin-bottom: 20px;
 }

@@ -18,35 +18,42 @@
                 <h2>Color blind test</h2>
             </header>
             <div class="row" id="menu-div">
-                <div class="col-sm-3"><p>O que é daltonismo?</p> </div>
+                <div class="col-sm-3 menu-btn"><p id='menu-whats'>O que é daltonismo?</p> </div>
                 <div class="col-sm-1"><p>|</p></div>
-                <div class="col-sm-3"><p> Tipos de daltonismo</p></div>
+                <div class="col-sm-3 menu-btn"><p id='menu-type'> Tipos de daltonismo</p></div>
                 <div class="col-sm-1"><p>|</p></div>
-                <div class="col-sm-3"><p>Começar teste</p></div>
+                <div class="col-sm-3 menu-btn"><p  id='menu-test'>Começar teste</p></div>
             </div>
             
-            <div class="board" id="test-pick">
-                <h3>Selecione a cor Pipipi popopo</h3>
+            <div class="board" id="tab-test-pick">
+
+                <div class="div-button">
+                    <h3>Selecione a cor de acordo com os quadros</h3>
+                    <div id="counter-border">
+                        <h4 id="counter">1/5</h4>
+                    </div>
+                    
+                </div>
                 <div class="row" id="questions-options">
                     <div class="col-sm-4" id="first-select"> 
                         <select name="" id="select-1">
-                            <option value="1">Vermelho</option>
-                            <option value="2">Verde</option>
-                            <option value="3">Amarelo</option>
+                            <option value="0">Vermelho</option>
+                            <option value="1">Verde</option>
+                            <option value="2">Amarelo</option>
                         </select>
                     </div>
                     <div class="col-sm-4" id="second-select">
                         <select name="" id="select-2">
-                            <option value="1">Vermelho</option>
-                            <option value="2">Verde</option>
-                            <option value="3">Amarelo</option>
+                            <option value="0">Vermelho</option>
+                            <option value="1">Verde</option>
+                            <option value="2">Amarelo</option>
                         </select>
                     </div>
                     <div class="col-sm-4" id="third-select">
                         <select name="" id="select-3">
-                            <option value="1">Vermelho</option>
-                            <option value="2">Verde</option>
-                            <option value="3">Amarelo</option>
+                            <option value="0">Vermelho</option>
+                            <option value="1">Verde</option>
+                            <option value="2">Amarelo</option>
                         </select>
                     </div>
                 </div>
@@ -56,9 +63,12 @@
                     <div class="option col-sm-3" id="second"></div>
                     <div class="option col-sm-3" id="third"></div>
                 </div>
+                <div class="div-button">
+                    <button class="btn btn-dark" id='next'>Avançar</button>
+                </div>
             </div>
 
-            <div class="board" id="whats-colorblindness">
+            <div class="board" id="tab-whats-colorblindness">
                 <h4>O que é daltonismo?</h4>
                 <p>Possuir daltonismo significa que você vê as cores diferente das outras pessoas.
                     Na maioria dos casos, o daltonismo faz com que seja difícil a percepção de diferença entre algumas cores.
@@ -84,16 +94,31 @@
                 </p>
 
                 <p>Fonte: <a href="https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness">
-                    Color Blidness</a>, <em>National Eye Institute.</em> U.S. Department of Health and Human Services - National Institutes of Health. 2015.     
+                    Color Blidness</a>, <em>National Eye Institute.</em> U.S. Department of Health and Human Services - National Institutes of Health. 2015. Acessado em 05/02/2020.
+                </p>
+            </div>
+
+            <div class="board" id="tab-commom-types">
+                <h4>Casos comuns</h4>
+                <p>A monocromia, onde a pessoa enxerga em preto e branco, na verdade é o mais raro. 
+                    Normalmente os problemas são entre as cores verde e vermelho. os tipos mais comuns são:
+                    <ul>
+                        <li>Protanopia, não enxerga vermelho;</li>
+                        <li>Deuteranotopia, não enxerga verde;</li>
+                        <li>Tritanopia, não distingue amarelo e vermelho mas é mais rara que as anteriores</li>
+                    </ul>
+                </p>
+                <p>Fonte: <a href="https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness/types-color-blindness">
+                    Types of Color Blindness</a>, <em>National Eye Institute.</em> U.S. Department of Health and Human Services - National Institutes of Health. 2015. Acessado em 05/02/2020.  
                 </p>
             </div>
             
         </div>
         
      
-
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </body>
 </html>
