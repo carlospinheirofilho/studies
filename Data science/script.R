@@ -25,6 +25,10 @@ hist(df$Renda.Mensal.Informal,
 renda_mensal <- df$Renda.Mensal.Informal[is.na(df$Renda.Mensal.Informal) != TRUE]
 bench =  1159.0 + 1.5*IQR(renda_mensal)
 renda_mensal[renda_mensal > bench] <- bench
+hist(na.omit(renda_m_informal[renda_m_informal < 1000]))
+ hist(na.omit(renda_m_informal))
+ renda_m_informal_s_na <- na.omit(renda_m_informal)
+ bench <- 1159.0 + 1.5*IQR(renda_m_informal_s_na)
 #Calda para direita.Com problemas de outliers. 
 
 summary(df$Dependentes)
@@ -33,3 +37,30 @@ summary(df$Dependentes)
 table(df$Estado.Civil)
 # A maior parte é solteiro ou casado.
 
+escolaridade <- df$Escolaridade
+escolaridade[is.na(escolaridade) == TRUE] <- 0
+
+renda_m_informal <- df$Renda.Mensal.Informal
+
+dependente <- df$Dependentes
+estado_civil <- df$Estado.Civil
+idade <- df$Idade
+summary(idade)
+
+conta_poupanca <- df$Conta.Poupanca
+quantidade_drendas <- df$Qtd.Fonte.Renda
+conta_salario <- df$Conta.Salario
+quantidade_adiantamentos <- df$Quant.Adiantamento.Deposito
+cheque <- df$Cheque.Sem.Fundo
+conta_cojun <- df$Conta.Conjunta
+valor_emprestimo <- df$Valor.Emprestimo
+multa <- df$Multa
+juros <- df$Juros
+emprestimo_atual <- df$Valor.Emprestimo.Atualizado
+estado <- df$Estado
+gnr <- df$Genero
+pago <- df$PAGO
+
+type <- lm(pago ~ dependente + estado_civil + idade + conta_poupanca + cheque + valor_emprestimo + multa + juros + emprestimo_atual + conta_cojun, data = df)
+
+#lembrar de utilizar bench
